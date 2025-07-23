@@ -3,7 +3,7 @@ import heroImg from "../../assets/images/heroImg.png";
 import ScrollAnimation from "./SCrollAnimation";
 const Hero = () => {
   return (
-    <div className="w-full">
+    <div className="w-full pb-14" >
       <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-10 lg:gap-32 mt-14 items-center justify-between px-4">
         <div className="text-center lg:text-left">
           <h1 className="text-[#808EA3] font-bold text-3xl sm:text-4xl md:text-5xl max-w-[500px] leading-tight">
@@ -36,7 +36,7 @@ const Hero = () => {
           />
         </div>
       </div>
-        <div>
+        <div className="mt-5">
           <ScrollAnimation />
         </div>
     </div>
