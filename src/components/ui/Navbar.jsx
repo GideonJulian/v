@@ -7,8 +7,8 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="w-full px-4 py-6 md:px-8 lg:px-12">
-      <div className="mx-auto flex items-center justify-between">
+    <div className="w-full  px-4 py-6 md:px-8 lg:px-12">
+      <div className="mx-auto max-w-[1200px] flex items-center justify-between">
         {/* Logo */}
         <div className="flex-shrink-0">
           <img src={logo} alt="Logo" className="w-34 md:w-32 lg:w-36" />
