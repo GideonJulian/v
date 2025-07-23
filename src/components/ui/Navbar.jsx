@@ -53,7 +53,7 @@ const Navbar = () => {
 
       {/* Mobile Dropdown Menu */}
       <div
-        className={`fixed top-0 left-0 right-0 bg-[#141E38] shadow-lg z-40 transform transition-transform duration-300 ease-in-out flex flex-col justify-between ${
+        className={`fixed top-0 left-0 right-0 bg-[#141qE38] shadow-lg z-40 transform transition-transform duration-300 ease-in-out flex flex-col justify-between ${
           menuOpen ? "translate-y-0" : "-translate-y-full"
         }`}
         style={{ height: "50vh" }}
