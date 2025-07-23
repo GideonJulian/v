@@ -62,7 +62,7 @@ const Navbar = () => {
               <Link onClick={() => setMenuOpen(false)}>Contact Us</Link>
             </li>
             <div className="flex flex-col gap-2 mt-4">
-              <button className="text-[#808EA3] font-bold text-lg">Login</button>
+              <button className="text-[#808EA3] font-bold text-lg cursor-pointer" >Login</button>
               <button className="relative px-6 py-3 rounded-lg bg-gradient-to-r from-purple-600 to-purple-400 text-black font-medium flex items-center gap-2">
                 Sign Up
                 <span className="text-lg">→</span>

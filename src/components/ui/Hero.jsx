@@ -1,16 +1,17 @@
 import React from "react";
 import heroImg from "../../assets/images/heroImg.png";
 import ScrollAnimation from "./SCrollAnimation";
+import GradientText from "./GradientText";
 const Hero = () => {
   return (
-    <div className="w-full pb-14" >
+    <div className="w-full pb-14">
       <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-10 lg:gap-32 mt-14 items-center justify-between px-4">
         <div className="text-center lg:text-left">
           <h1 className="text-[#808EA3] font-bold text-3xl sm:text-4xl md:text-5xl max-w-[500px] leading-tight">
-            Quantum{" "}
-            <span className="bg-gradient-to-r from-[rgba(114,85,247,1)] to-[rgba(187,153,255,1)] bg-clip-text text-transparent">
-              Financial
-            </span>{" "}
+            <span>
+              {" "}
+              Quantum <GradientText text={"Financial"} />{" "}
+            </span>
             Security & Cloud Wallet
           </h1>
           <p className="text-[#808EA3] mt-5 max-w-[500px] mx-auto lg:mx-0 text-base sm:text-lg">
@@ -36,9 +37,9 @@ const Hero = () => {
           />
         </div>
       </div>
-        <div className="mt-5">
-          <ScrollAnimation />
-        </div>
+      <div className="mt-5">
+        <ScrollAnimation />
+      </div>
     </div>
   );
 };

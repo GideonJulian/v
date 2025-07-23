@@ -5,6 +5,7 @@ import ETH from "../../assets/icons/eth.png";
 import DOGE from "../../assets/icons/doge.png";
 import SOL from "../../assets/icons/sol.png";
 import XRP from "../../assets/icons/xrp.png";
+
 const ScrollAnimation = () => {
   const cryptos = [
     { symbol: BTC, name: "Bitcoin", price: "$119,124", change: "+1.52%" },
@@ -16,9 +17,9 @@ const ScrollAnimation = () => {
   ];
 
   return (
-    <div className="relative overflow-hidden bg-[#0D0F14] py-3">
+    <div className="relative overflow-hidden bg-[#0D0F14] py-3 group">
       <div
-        className="flex gap-10 whitespace-nowrap animate-[scroll_20s_linear_infinite]"
+        className="flex gap-10 whitespace-nowrap animate-[scroll_20s_linear_infinite] group-hover:[animation-play-state:paused]"
         style={{
           animation: "scroll 20s linear infinite",
         }}
@@ -28,11 +29,11 @@ const ScrollAnimation = () => {
             key={index}
             className="flex items-center gap-3 text-white min-w-[200px]"
           >
-            <div className="w-12 h-12 flex items-center justify-center">
+            <div className="w-14 h-14 flex items-center justify-center">
               <img
                 src={crypto.symbol}
                 alt={crypto.name}
-                className="w-12 h-12 object-contain"
+                className="w-14 h-14 object-contain"
               />
             </div>
 
