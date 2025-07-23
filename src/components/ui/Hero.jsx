@@ -2,9 +2,11 @@ import React from "react";
 import heroImg from "../../assets/images/heroImg.png";
 import ScrollAnimation from "./SCrollAnimation";
 import GradientText from "./GradientText";
+import ParticlesBackground from "./ParticlesBackground";
 const Hero = () => {
   return (
-    <div className="w-full pt-20 pb-14">
+    <div className="w-full pt-20 pb-14 relative">
+        <ParticlesBackground />
       <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-10 lg:gap-32 mt-14 items-center justify-between px-4">
         <div className="text-center lg:text-left">
           <h1 className="text-[#808EA3] font-bold text-3xl sm:text-4xl md:text-5xl max-w-[500px] leading-tight">
@@ -20,7 +22,7 @@ const Hero = () => {
             cutting-edge technology.
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-5 mt-6 justify-center lg:justify-start">
-            <button className="relative px-6 py-3 cursor-pointer rounded-lg bg-gradient-to-r from-purple-600 to-purple-400 text-black font-medium flex items-center gap-2">
+            <button className="relative px-6 py-2 cursor-pointer rounded-lg bg-gradient-to-r from-purple-600 to-purple-400 text-black font-medium flex items-center gap-2">
               Sign Up
               <span className="text-lg">→</span>
             </button>

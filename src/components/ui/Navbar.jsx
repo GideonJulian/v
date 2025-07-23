@@ -51,29 +51,40 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Overlay Menu */}
+      {/* Mobile Dropdown Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-[#141E38] shadow-lg z-50 transform transition-transform duration-300 ease-in-out flex flex-col justify-between ${
-          menuOpen ? "translate-x-0" : "translate-x-full"
+        className={`fixed top-0 left-0 right-0 bg-[#141E38] shadow-lg z-40 transform transition-transform duration-300 ease-in-out flex flex-col justify-between ${
+          menuOpen ? "translate-y-0" : "-translate-y-full"
         }`}
+        style={{ height: "100vh" }}
       >
         {/* Menu Links */}
-        <div className="p-6">
-          <ul className="flex flex-col gap-6 text-base">
-            <li className="text-[#808EA3]">
-              <Link onClick={() => setMenuOpen(false)} to="/">Home</Link>
-            </li>
-            <li className="text-[#808EA3]">
-              <Link onClick={() => setMenuOpen(false)} to="/about">About Us</Link>
-            </li>
-            <li className="text-[#808EA3]">
-              <Link onClick={() => setMenuOpen(false)} to="/contact">Contact Us</Link>
-            </li>
-          </ul>
+        <div className="p-6 mt-16 flex flex-col gap-6 text-base">
+          <Link
+            onClick={() => setMenuOpen(false)}
+            to="/"
+            className="text-[#808EA3]"
+          >
+            Home
+          </Link>
+          <Link
+            onClick={() => setMenuOpen(false)}
+            to="/about"
+            className="text-[#808EA3]"
+          >
+            About Us
+          </Link>
+          <Link
+            onClick={() => setMenuOpen(false)}
+            to="/contact"
+            className="text-[#808EA3]"
+          >
+            Contact Us
+          </Link>
         </div>
 
         {/* Buttons at Bottom */}
-        <div className="p-6 border-t border-[#808EA3]/20">
+        <div className="p-6 border-t border-[#808EA3]/20 mt-auto">
           <div className="flex flex-col gap-3">
             <button className="text-[#808EA3] font-bold text-lg">Login</button>
             <button className="relative px-6 py-3 rounded-lg bg-gradient-to-r from-purple-600 to-purple-400 text-black font-medium flex items-center gap-2">
@@ -87,7 +98,7 @@ const Navbar = () => {
       {/* Optional backdrop */}
       {menuOpen && (
         <div
-          className="fixed inset-0 bg-black/50 z-40"
+          className="fixed inset-0 bg-black/50 z-30"
           onClick={() => setMenuOpen(false)}
         ></div>
       )}
