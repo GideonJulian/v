@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/ui/Navbar'
 import Hero from '../components/ui/Hero'
 import ScrollAnimation from '../components/ui/SCrollAnimation'
+import Oursolution from '../components/Oursolution'
 
 const Home = () => {
   return (
@@ -12,7 +13,9 @@ const Home = () => {
         <div>
           <Hero />
         </div>
-      
+      <div className='w-full'> 
+        <Oursolution />
+      </div>
     </div>
   )
 }
