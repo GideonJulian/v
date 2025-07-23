@@ -4,6 +4,7 @@ import Hero from "../components/ui/Hero";
 import ScrollAnimation from "../components/ui/SCrollAnimation";
 import Oursolution from "../components/Oursolution";
 import Whyus from "../components/Whyus";
+import HowitWorks from "../components/HowitWorks";
 
 const Home = () => {
   return (
@@ -19,6 +20,9 @@ const Home = () => {
       </div>
       <div>
         <Whyus /> 
+      </div>
+      <div>
+        <HowitWorks />
       </div>
     </div>
   );
