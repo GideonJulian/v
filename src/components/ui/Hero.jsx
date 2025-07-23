@@ -1,6 +1,6 @@
 import React from "react";
 import heroImg from "../../assets/images/heroImg.png";
-
+import ScrollAnimation from "./SCrollAnimation";
 const Hero = () => {
   return (
     <div className="w-full">
@@ -36,6 +36,9 @@ const Hero = () => {
           />
         </div>
       </div>
+        <div>
+          <ScrollAnimation />
+        </div>
     </div>
   );
 };

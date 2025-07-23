@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/ui/Navbar'
 import Hero from '../components/ui/Hero'
+import ScrollAnimation from '../components/ui/SCrollAnimation'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
         <div>
           <Hero />
         </div>
+      
     </div>
   )
 }
