@@ -13,7 +13,7 @@ const Home = () => {
         <div>
           <Hero />
         </div>
-      <div className='w-full'> 
+      <div className='w-full p-4'> 
         <Oursolution />
       </div>
     </div>
