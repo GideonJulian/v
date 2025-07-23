@@ -1,13 +1,18 @@
 import React from "react";
-
+import ADA from "../../assets/icons/ada.png";
+import BTC from "../../assets/icons/btc.png";
+import ETH from "../../assets/icons/eth.png";
+import DOGE from "../../assets/icons/doge.png";
+import SOL from "../../assets/icons/sol.png";
+import XRP from "../../assets/icons/xrp.png";
 const ScrollAnimation = () => {
   const cryptos = [
-    { symbol: "BTC", name: "Bitcoin", price: "$119,124", change: "+1.52%" },
-    { symbol: "ETH", name: "Ethereum", price: "$3,852.4", change: "+2.50%" },
-    { symbol: "SOL", name: "Solana", price: "$198.25", change: "+9.27%" },
-    { symbol: "XRP", name: "XRP", price: "$3.64", change: "+5.36%" },
-    { symbol: "DOGE", name: "Dogecoin", price: "$0.28145", change: "+2.81%" },
-    { symbol: "ADA", name: "Cardano", price: "$0.92240", change: "+7.51%" },
+    { symbol: BTC, name: "Bitcoin", price: "$119,124", change: "+1.52%" },
+    { symbol: ETH, name: "Ethereum", price: "$3,852.4", change: "+2.50%" },
+    { symbol: SOL, name: "Solana", price: "$198.25", change: "+9.27%" },
+    { symbol: XRP, name: "XRP", price: "$3.64", change: "+5.36%" },
+    { symbol: DOGE, name: "Dogecoin", price: "$0.28145", change: "+2.81%" },
+    { symbol: ADA, name: "Cardano", price: "$0.92240", change: "+7.51%" },
   ];
 
   return (
@@ -23,9 +28,14 @@ const ScrollAnimation = () => {
             key={index}
             className="flex items-center gap-3 text-white min-w-[200px]"
           >
-            <div className="w-8 h-8 rounded-full bg-purple-800 flex items-center justify-center text-sm font-semibold">
-              {crypto.symbol}
+            <div className="w-12 h-12 flex items-center justify-center">
+              <img
+                src={crypto.symbol}
+                alt={crypto.name}
+                className="w-12 h-12 object-contain"
+              />
             </div>
+
             <div className="flex flex-col">
               <span className="font-medium">{crypto.name}</span>
               <div className="flex items-center gap-3">
