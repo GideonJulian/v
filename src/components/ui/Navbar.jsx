@@ -50,11 +50,12 @@ const Navbar = () => {
 
       {/* Mobile Overlay Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-[#141E38] shadow-lg z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-full w-64 bg-[#141E38] shadow-lg z-50 transform transition-transform duration-300 ease-in-out flex flex-col justify-between ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="p-6 flex flex-col gap-4">
+        {/* Menu Links */}
+        <div className="p-6">
           <ul className="flex flex-col gap-6 text-base">
             <li className="text-[#808EA3]">
               <Link onClick={() => setMenuOpen(false)} to="/">Home</Link>
@@ -66,7 +67,11 @@ const Navbar = () => {
               <Link onClick={() => setMenuOpen(false)} to="/contact">Contact Us</Link>
             </li>
           </ul>
-          <div className="mt-6 flex flex-col gap-3">
+        </div>
+
+        {/* Buttons at Bottom */}
+        <div className="p-6 border-t border-[#808EA3]/20">
+          <div className="flex flex-col gap-3">
             <button className="text-[#808EA3] font-bold text-lg">Login</button>
             <button className="relative px-6 py-3 rounded-lg bg-gradient-to-r from-purple-600 to-purple-400 text-black font-medium flex items-center gap-2">
               Sign Up
