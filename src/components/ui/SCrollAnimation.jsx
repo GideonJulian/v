@@ -19,9 +19,9 @@ const ScrollAnimation = () => {
   return (
     <div className="relative overflow-hidden bg-[#0D0F14] py-3 group">
       <div
-        className="flex gap-10 whitespace-nowrap animate-[scroll_10s_linear_infinite] group-hover:[animation-play-state:paused]"
+        className="flex gap-10 whitespace-nowrap animate-[scroll_5s_linear_infinite] group-hover:[animation-play-state:paused]"
         style={{
-          animation: "scroll 10s linear infinite",
+          animation: "scroll 5s linear infinite",
         }}
       >
         {[...cryptos, ...cryptos].map((crypto, index) => (
