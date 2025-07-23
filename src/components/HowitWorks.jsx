@@ -2,6 +2,7 @@ import React from "react";
 import j from "../assets/images/J.png";
 import g from "../assets/images/G.png";
 import notepad from "../assets/images/notepad.png";
+
 const HowitWorks = () => {
   return (
     <div className="mt-12 max-w-[1200px] mx-auto px-4">
@@ -18,7 +19,8 @@ const HowitWorks = () => {
           massa.
         </p>
       </div>
-      <div className="flex items-center gap-10 mt-12">
+
+      <div className="flex items-start justify-between gap-5 mt-12 flex-wrap md:flex-nowrap">
         {[
           {
             head: "Create An Account",
@@ -35,12 +37,15 @@ const HowitWorks = () => {
             text: "Lorem ipsum dolor sit amet consectetur. Mattis ultrices aenean.",
             img: g,
           },
-        ].map((items) => (
-          <div className="bg-[#141E384D] px-5">
-            <img src={items.img} alt="" />
+        ].map((items, index) => (
+          <div
+            key={index}
+            className="bg-[#141E384D] px-5 py-6 w-full md:w-1/3 shadow-md"
+          >
+            <img src={items.img} alt="" className="w-full h-auto" />
             <div className="text-center mt-5">
-                <h1 className="font-bold text-white">{items.head}</h1>
-                <p className="py-7 text-white">{items.text} </p>
+              <h1 className="font-bold text-white">{items.head}</h1>
+              <p className="py-7 text-white">{items.text}</p>
             </div>
           </div>
         ))}
