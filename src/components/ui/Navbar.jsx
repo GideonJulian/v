@@ -85,8 +85,8 @@ const Navbar = () => {
 
         {/* Buttons at Bottom */}
         <div className="p-6 border-t border-[#808EA3]/20 mt-auto">
-          <div className="flex flex-col gap-3">
-            <button className="text-[#808EA3] font-bold text-lg">Login</button>
+          <div className="flex items-center justify-between gap-3">
+            <button className="text-[#808EA3] font-bold text-lg  border border-[#7255F780] px-16 py-3 rounded-md ">Login</button>
             <button className="relative px-6 py-3 rounded-lg bg-gradient-to-r from-purple-600 to-purple-400 text-black font-medium flex items-center gap-2">
               Sign Up
               <span className="text-lg">→</span>
