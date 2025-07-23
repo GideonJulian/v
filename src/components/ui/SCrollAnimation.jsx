@@ -28,9 +28,11 @@ const ScrollAnimation = () => {
             </div>
             <div className="flex flex-col">
               <span className="font-medium">{crypto.name}</span>
-              <span className="text-gray-400">{crypto.price}</span>
+              <div className="flex items-center gap-3">
+                <span className="text-gray-400">{crypto.price}</span>
+                <span className="text-green-400">{crypto.change}</span>
+              </div>
             </div>
-            <span className="text-green-400">{crypto.change}</span>
           </div>
         ))}
       </div>
