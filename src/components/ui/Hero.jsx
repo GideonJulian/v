@@ -21,7 +21,7 @@ const Hero = () => {
             Prepare for global events with military-grade security and
             cutting-edge technology.
           </p>
-          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-5 mt-6 justify-center lg:justify-start">
+          <div className="flex flex-row items-center gap-4 sm:gap-5 mt-6 justify-center lg:justify-start">
             <button className="relative px-6 py-2 cursor-pointer rounded-lg bg-gradient-to-r from-purple-600 to-purple-400 text-black font-medium flex items-center gap-2">
               Sign Up
               <span className="text-lg">→</span>
