@@ -56,7 +56,7 @@ const Navbar = () => {
         className={`fixed top-0 left-0 right-0 bg-[#141E38] shadow-lg z-40 transform transition-transform duration-300 ease-in-out flex flex-col justify-between ${
           menuOpen ? "translate-y-0" : "-translate-y-full"
         }`}
-        style={{ height: "100vh" }}
+        style={{ height: "50vh" }}
       >
         {/* Menu Links */}
         <div className="p-6 mt-16 flex flex-col gap-6 text-base">
