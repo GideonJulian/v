@@ -4,7 +4,7 @@ import ScrollAnimation from "./SCrollAnimation";
 import GradientText from "./GradientText";
 const Hero = () => {
   return (
-    <div className="w-full pb-14">
+    <div className="w-full pt-20 pb-14">
       <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-10 lg:gap-32 mt-14 items-center justify-between px-4">
         <div className="text-center lg:text-left">
           <h1 className="text-[#808EA3] font-bold text-3xl sm:text-4xl md:text-5xl max-w-[500px] leading-tight">
