@@ -7,6 +7,7 @@ import Whyus from "../components/Whyus";
 import HowitWorks from "../components/HowitWorks";
 import FeedBacks from "../components/FeedBacks";
 import Stats from "../components/Stats";
+import Strategic from "../components/Strategic";
 
 const Home = () => {
   return (
@@ -31,6 +32,9 @@ const Home = () => {
       </div>
       <div>
         <Stats />
+      </div>
+      <div>
+        <Strategic />
       </div>
     </div>
   );

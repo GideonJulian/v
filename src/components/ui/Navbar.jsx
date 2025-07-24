@@ -59,7 +59,7 @@ const Navbar = () => {
         style={{ height: "60vh" }}
       >
         {/* Menu Links */}
-        <div className="p-6 mt-16 flex flex-col gap-6 text-base">
+        <div className="p-6 mt-26 flex flex-col gap-10 text-base">
           <Link
             onClick={() => setMenuOpen(false)}
             to="/"
@@ -84,11 +84,11 @@ const Navbar = () => {
         </div>
 
         {/* Buttons at Bottom */}
-        <div className="flex items-center justify-between gap-3">
-          <button className="w-1/2 text-[#808EA3] font-bold text-base border border-[#7255F7] py-3 rounded-md">
+        <div className="flex items-center justify-between gap-2 p-4">
+          <button className="w-70 text-[#808EA3] font-bold text-base border border-[#7255F7] py-3 rounded-md">
             Login
           </button>
-          <button className="w-1/2 py-3 rounded-md bg-gradient-to-r from-purple-600 to-purple-400 text-black font-medium flex items-center justify-center gap-2">
+          <button className="w-70 py-3 rounded-md bg-gradient-to-r from-purple-600 to-purple-400 text-black font-medium flex items-center justify-center gap-2">
             Sign Up
             <span className="text-lg">→</span>
           </button>
