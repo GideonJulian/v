@@ -3,10 +3,14 @@ import heroImg from "../../assets/images/heroImg.png";
 import ScrollAnimation from "./SCrollAnimation";
 import GradientText from "./GradientText";
 import ParticlesBackground from "./ParticlesBackground";
+import bg from '../../assets/images/bg.png'
 const Hero = () => {
   return (
     <div className="w-full pt-20 pb-14 relative">
-        <ParticlesBackground />
+        <div
+        className="absolute inset-0 bg-no-repeat bg-cover bg-center -z-10"
+        style={{ backgroundImage: `url(${bg})` }}
+      />
       <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-10 lg:gap-32 mt-14 items-center justify-between px-4">
         <div className="text-center lg:text-left">
           <h1 className="text-[#808EA3] font-bold text-3xl sm:text-4xl md:text-5xl max-w-[500px] leading-tight">
@@ -39,7 +43,7 @@ const Hero = () => {
           />
         </div>
       </div>
-      <div className="mt-5">
+      <div className="mt-10">
         <ScrollAnimation />
       </div>
     </div>
