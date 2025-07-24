@@ -6,6 +6,7 @@ import Oursolution from "../components/Oursolution";
 import Whyus from "../components/Whyus";
 import HowitWorks from "../components/HowitWorks";
 import FeedBacks from "../components/FeedBacks";
+import Stats from "../components/Stats";
 
 const Home = () => {
   return (
@@ -27,6 +28,9 @@ const Home = () => {
       </div>
       <div>
         <FeedBacks />
+      </div>
+      <div>
+        <Stats />
       </div>
     </div>
   );

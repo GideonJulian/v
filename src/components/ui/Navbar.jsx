@@ -53,7 +53,7 @@ const Navbar = () => {
 
       {/* Mobile Dropdown Menu */}
       <div
-        className={`fixed top-0 left-0 right-0 bg-[#141qE38] shadow-lg z-40 transform transition-transform duration-300 ease-in-out flex flex-col justify-between ${
+        className={`fixed top-0 left-0 right-0 bg-[#080C16] shadow-lg z-40 transform transition-transform duration-300 ease-in-out flex flex-col justify-between ${
           menuOpen ? "translate-y-0" : "-translate-y-full"
         }`}
         style={{ height: "50vh" }}
@@ -84,14 +84,14 @@ const Navbar = () => {
         </div>
 
         {/* Buttons at Bottom */}
-        <div className="p-6 border-t border-[#808EA3]/20 mt-auto">
-          <div className="flex items-center justify-between gap-3">
-            <button className="text-[#808EA3] font-bold text-lg  border border-[#7255F780] px-16 py-3 rounded-md ">Login</button>
-            <button className="relative px-6 py-3 rounded-lg bg-gradient-to-r from-purple-600 to-purple-400 text-black font-medium flex items-center gap-2">
-              Sign Up
-              <span className="text-lg">→</span>
-            </button>
-          </div>
+        <div className="flex items-center justify-between gap-3">
+          <button className="w-1/2 text-[#808EA3] font-bold text-base border border-[#7255F7] py-3 rounded-md">
+            Login
+          </button>
+          <button className="w-1/2 py-3 rounded-md bg-gradient-to-r from-purple-600 to-purple-400 text-black font-medium flex items-center justify-center gap-2">
+            Sign Up
+            <span className="text-lg">→</span>
+          </button>
         </div>
       </div>
 
