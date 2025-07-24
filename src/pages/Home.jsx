@@ -5,6 +5,7 @@ import ScrollAnimation from "../components/ui/SCrollAnimation";
 import Oursolution from "../components/Oursolution";
 import Whyus from "../components/Whyus";
 import HowitWorks from "../components/HowitWorks";
+import FeedBacks from "../components/FeedBacks";
 
 const Home = () => {
   return (
@@ -23,6 +24,9 @@ const Home = () => {
       </div>
       <div>
         <HowitWorks />
+      </div>
+      <div>
+        <FeedBacks />
       </div>
     </div>
   );
