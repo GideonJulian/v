@@ -17,8 +17,22 @@ const FeedBacks = () => {
           management
         </p>
       </div>
-      <div>
+      <div className="flex items-center gap-8 my-8">
         {[
+          {
+            text: '"The quantum encryption technology here is genuinely revolutionary. I finally feel secure about my digital assets."',
+            name: "Dr. Sarah Chen",
+            role: "Dr. Sarah Chen",
+            stars: stars,
+            user: user,
+          },
+          {
+            text: '"The quantum encryption technology here is genuinely revolutionary. I finally feel secure about my digital assets."',
+            name: "Dr. Sarah Chen",
+            role: "Dr. Sarah Chen",
+            stars: stars,
+            user: user,
+          },
           {
             text: '"The quantum encryption technology here is genuinely revolutionary. I finally feel secure about my digital assets."',
             name: "Dr. Sarah Chen",
@@ -29,10 +43,17 @@ const FeedBacks = () => {
         ].map((items) => (
           <div className="bg-[#141E384D] p-6 shadow-md rounded-md">
             <div>
-                <img src={items.stars} className="w-92  mb-3" />
+              <img src={items.stars} className="w-92  mb-3" />
             </div>
             <div>
-                <p className="text-[#8FA2BC] italic w-[318px]">{items.text}</p>
+              <p className="text-[#8FA2BC] text-[18px] py-4 italic w-[318px]">{items.text}</p>
+            </div>
+            <div className="flex  items-center gap-3 mt-5">
+              <img src={items.user} alt="" className="w-14"/>
+              <div>
+                <h1 className="font-bold text-white text-lg ">{items.name}</h1>
+                <p className="text-[#8FA2BC]">{items.role}</p>
+              </div>
             </div>
           </div>
         ))}
