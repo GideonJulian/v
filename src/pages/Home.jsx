@@ -8,6 +8,7 @@ import HowitWorks from "../components/HowitWorks";
 import FeedBacks from "../components/FeedBacks";
 import Stats from "../components/Stats";
 import Strategic from "../components/Strategic";
+import Faq from "../components/Faq";
 
 const Home = () => {
   return (
@@ -35,6 +36,9 @@ const Home = () => {
       </div>
       <div>
         <Strategic />
+      </div>
+      <div>
+        <Faq />
       </div>
     </div>
   );
