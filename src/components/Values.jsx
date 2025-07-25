@@ -18,7 +18,7 @@ const CoreValues = () => {
 
         {/* Values Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="bg-[#101322] rounded-xl p-6 shadow-md hover:shadow-lg transition">
+          <div className="bg-[#080C16] flex items-center flex-col gap-5 rounded-xl p-6 shadow-md hover:shadow-lg transition">
             <div className="text-[#A689FC] mb-4">
               <FaShieldAlt size={28} />
             </div>
@@ -28,7 +28,7 @@ const CoreValues = () => {
             </p>
           </div>
 
-          <div className="bg-[#101322] rounded-xl p-6 shadow-md hover:shadow-lg transition">
+          <div className="bg-[#080C16] flex items-center flex-col gap-5 rounded-xl p-6 shadow-md hover:shadow-lg transition">
             <div className="text-[#A689FC] mb-4">
               <FaBrain size={28} />
             </div>
@@ -38,7 +38,7 @@ const CoreValues = () => {
             </p>
           </div>
 
-          <div className="bg-[#101322] rounded-xl p-6 shadow-md hover:shadow-lg transition">
+          <div className="bg-[#080C16] flex items-center flex-col gap-5 rounded-xl p-6 shadow-md hover:shadow-lg transition">
             <div className="text-[#A689FC] mb-4">
               <FaUserFriends size={28} />
             </div>
@@ -48,7 +48,7 @@ const CoreValues = () => {
             </p>
           </div>
 
-          <div className="bg-[#101322] rounded-xl p-6 shadow-md hover:shadow-lg transition">
+          <div className="bg-[#080C16] flex items-center flex-col gap-5 rounded-xl p-6 shadow-md hover:shadow-lg transition">
             <div className="text-[#A689FC] mb-4">
               <FaHeart size={28} />
             </div>
