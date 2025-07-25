@@ -9,6 +9,7 @@ import FeedBacks from "../components/FeedBacks";
 import Stats from "../components/Stats";
 import Strategic from "../components/Strategic";
 import Faq from "../components/Faq";
+import GetStarted from "../components/GetStarted";
 
 const Home = () => {
   return (
@@ -39,6 +40,9 @@ const Home = () => {
       </div>
       <div>
         <Faq />
+      </div>
+      <div>
+        <GetStarted />
       </div>
     </div>
   );

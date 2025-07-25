@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <>
       {/* Fixed Navbar */}
-      <div className="fixed top-0 left-0 right-0 z-50 bg-[#141E384D] backdrop-blur-sm px-4 py-6 md:px-8 lg:px-12 shadow-md">
+      <div className="fixed top-0 left-0 right-0 z-50  backdrop-blur-sm px-4 py-6 md:px-8 lg:px-12 shadow-md">
         <div className="mx-auto max-w-[1200px] flex items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0">
