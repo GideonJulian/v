@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/ui/Navbar'
 import AboutHero from '../components/ui/AboutHero'
+import OurMission from '../components/Mission'
 
 const About = () => {
   return (
@@ -10,7 +11,7 @@ const About = () => {
             <AboutHero />
         </div>
         <div>
-
+<OurMission />
         </div>
     </div>
   )

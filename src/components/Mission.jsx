@@ -22,9 +22,10 @@ const OurMission = () => {
           </h2>
 
           <p className="text-[#A0AEC0] leading-relaxed mb-8 max-w-[600px]">
-            We believe financial technology should be accessible to everyone, not just institutions.
-            Our quantum-powered platform combines cutting-edge technology with intuitive design
-            to create the future of digital finance.
+            We believe financial technology should be accessible to everyone,
+            not just institutions. Our quantum-powered platform combines
+            cutting-edge technology with intuitive design to create the future
+            of digital finance.
           </p>
 
           <div className="space-y-6">
@@ -33,9 +34,12 @@ const OurMission = () => {
                 <FaChartLine size={20} />
               </div>
               <div>
-                <h4 className="font-semibold text-white">Advanced Trading for All</h4>
+                <h4 className="font-semibold text-white">
+                  Advanced Trading for All
+                </h4>
                 <p className="text-[#A0AEC0] text-sm">
-                  Professional-grade tools made simple and accessible to retail investors
+                  Professional-grade tools made simple and accessible to retail
+                  investors
                 </p>
               </div>
             </div>
@@ -45,9 +49,12 @@ const OurMission = () => {
                 <FaLock size={20} />
               </div>
               <div>
-                <h4 className="font-semibold text-white">Quantum-Level Security</h4>
+                <h4 className="font-semibold text-white">
+                  Quantum-Level Security
+                </h4>
                 <p className="text-[#A0AEC0] text-sm">
-                  Military-grade encryption and quantum-resistant security protocols
+                  Military-grade encryption and quantum-resistant security
+                  protocols
                 </p>
               </div>
             </div>
@@ -67,24 +74,28 @@ const OurMission = () => {
         </div>
 
         {/* Right Stats Card */}
-        <div className="flex-1 bg-[#101322] rounded-xl shadow-md p-8 w-full max-w-md">
-          <h3 className="text-white text-xl font-semibold mb-2">Platform Performance</h3>
-          <p className="text-[#A0AEC0] mb-6 text-sm">Real-time metrics powering your success</p>
+        <div className="flex-1 flex items-center flex-col justify-center bg-[#101322] rounded-xl shadow-md p-8 w-full max-w-[606px]">
+          <h3 className="text-white text-xl font-semibold mb-2">
+            Platform Performance
+          </h3>
+          <p className="text-[#A0AEC0] mb-6 text-sm">
+            Real-time metrics powering your success
+          </p>
 
-          <div className="grid grid-cols-2 gap-6 text-white">
-            <div>
+          <div className="grid grid-cols-2 gap-x-30 gap-y-10 text-white">
+            <div className="text-center">
               <h4 className="text-[#7255F7] text-2xl font-bold">0.01ms</h4>
               <p className="text-sm text-[#A0AEC0] mt-1">Avg Latency</p>
             </div>
-            <div>
+            <div className="text-center">
               <h4 className="text-[#7255F7] text-2xl font-bold">1M+</h4>
               <p className="text-sm text-[#A0AEC0] mt-1">TPS Capacity</p>
             </div>
-            <div>
+            <div className="text-center">
               <h4 className="text-[#7255F7] text-2xl font-bold">256-bit</h4>
               <p className="text-sm text-[#A0AEC0] mt-1">Encryption</p>
             </div>
-            <div>
+            <div className="text-center">
               <h4 className="text-[#7255F7] text-2xl font-bold">24/7</h4>
               <p className="text-sm text-[#A0AEC0] mt-1">Support</p>
             </div>
