@@ -3,11 +3,11 @@ import heroImg from "../../assets/images/heroImg.png";
 import ScrollAnimation from "./SCrollAnimation";
 import GradientText from "./GradientText";
 import ParticlesBackground from "./ParticlesBackground";
-import bg from '../../assets/images/bg.png'
+import bg from "../../assets/images/bg.png";
 const Hero = () => {
   return (
     <div className="w-full pt-20 pb-14 relative">
-        <div
+      <div
         className="absolute inset-0 bg-no-repeat bg-cover bg-center -z-10"
         style={{ backgroundImage: `url(${bg})` }}
       />
