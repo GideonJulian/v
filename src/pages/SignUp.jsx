@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
-
+import logo from '../assets/icons/logo.png'
+import bg from '../assets/images/bg.png'
 const RegisterPage = () => {
   const [mode, setMode] = useState("signup");
   const [showPassword, setShowPassword] = useState(false);
@@ -9,14 +10,15 @@ const RegisterPage = () => {
   const isSignup = mode === "signup";
 
   return (
-    <div className="min-h-screen bg-[#0A0D14] text-white flex flex-col md:flex-row items-center justify-center px-4">
+    <div className="relative min-h-screen bg-[#0A0D14] text-white flex flex-col md:flex-row items-center justify-center p-6">
+          <div
+                className="absolute inset-0 bg-no-repeat bg-cover bg-center -z-10"
+                style={{ backgroundImage: `url(${bg})` }}
+              />
       {/* Left Side */}
       <div className="w-full md:w-1/2 max-w-[600px] space-y-8 mb-12 md:mb-0">
         <div>
-          <h2 className="text-xl font-semibold text-[#A78BFA] flex items-center gap-2">
-            <span className="bg-[#A78BFA]/10 p-2 rounded-lg">⚡</span>
-            QFIsecure
-          </h2>
+        <img src={logo} alt="" />
 
           <h1 className="mt-6 text-3xl md:text-4xl font-bold text-white leading-tight">
             Join the <span className="text-[#A78BFA]">QFIsecure Revolution</span>
