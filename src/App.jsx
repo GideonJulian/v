@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 
 import Wallet from "./pages/Wallet";
-import Dashboard from "./pages/Dashboard";
+
 import AdminLayout from "./layouts/AdminLayout";
 
 import Dashboard_admin from "./layouts/_components/Dashboard_admin";
