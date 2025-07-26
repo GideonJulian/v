@@ -1,15 +1,16 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Logo from "./Logo";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <>
       {/* Fixed Navbar */}
-      <div className="fixed top-0 left-0 right-0 z-50  backdrop-blur-sm px-4 py-6 md:px-8 lg:px-12 shadow-md">
+      <div className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm px-4 py-6 md:px-8 lg:px-12 shadow-md">
         <div className="mx-auto max-w-[1200px] flex items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -31,8 +32,14 @@ const Navbar = () => {
 
           {/* Desktop Buttons */}
           <div className="hidden md:flex items-center gap-6">
-            <button className="text-[#808EA3] font-bold text-lg">Login</button>
-            <button className="relative px-6 py-3 rounded-lg bg-gradient-to-r from-purple-600 to-purple-400 text-black font-medium flex items-center gap-2">
+            <button
+              onClick={() => navigate("/signup")}
+              className="text-[#808EA3] font-bold text-lg cursor-pointer">
+              Login
+            </button>
+            <button
+              onClick={() => navigate("/signup")}
+              className="relative px-6 py-3 rounded-lg bg-gradient-to-r from-purple-600 cursor-pointer to-purple-400 text-black font-medium flex items-center gap-2">
               Sign Up
               <span className="text-lg">→</span>
             </button>
@@ -81,10 +88,20 @@ const Navbar = () => {
 
         {/* Buttons at Bottom */}
         <div className="flex items-center justify-between gap-2 p-4">
-          <button className="w-70 text-[#808EA3] font-bold text-base border border-[#7255F7] py-3 rounded-md">
+          <button
+            onClick={() => {
+              navigate("/signup");
+              setMenuOpen(false);
+            }}
+            className="w-70 text-[#808EA3] font-bold text-base border border-[#7255F7] py-3 rounded-md">
             Login
           </button>
-          <button className="w-70 py-3 rounded-md bg-gradient-to-r from-purple-600 to-purple-400 text-black font-medium flex items-center justify-center gap-2">
+          <button
+            onClick={() => {
+              navigate("/signup");
+              setMenuOpen(false);
+            }}
+            className="w-70 py-3 rounded-md bg-gradient-to-r from-purple-600 to-purple-400 text-black font-medium flex items-center justify-center gap-2">
             Sign Up
             <span className="text-lg">→</span>
           </button>

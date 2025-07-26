@@ -4,7 +4,9 @@ import ScrollAnimation from "./SCrollAnimation";
 import GradientText from "./GradientText";
 import ParticlesBackground from "./ParticlesBackground";
 import bg from "../../assets/images/bg.png";
+import { useNavigate } from "react-router-dom";
 const Hero = () => {
+   const navigate = useNavigate();
   return (
     <div className="w-full pt-20 pb-14 relative">
       <div
@@ -26,7 +28,7 @@ const Hero = () => {
             cutting-edge technology.
           </p>
           <div className="flex flex-row items-center gap-4 sm:gap-5 mt-6 justify-center lg:justify-start">
-            <button className="relative px-6 py-2 cursor-pointer rounded-lg bg-gradient-to-r from-purple-600 to-purple-400 text-black font-medium flex items-center gap-2">
+            <button    onClick={() => navigate("/signup")} className="relative px-6 py-2 cursor-pointer rounded-lg bg-gradient-to-r from-purple-600 to-purple-400 text-black font-medium flex items-center gap-2">
               Sign Up
               <span className="text-lg">→</span>
             </button>
