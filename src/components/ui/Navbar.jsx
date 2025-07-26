@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import logo from "../../assets/icons/logo.png";
+import Logo from "./Logo";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className="mx-auto max-w-[1200px] flex items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <img src={logo} alt="Logo" className="w-28 md:w-32 lg:w-36" />
+            <Logo />
           </div>
 
           {/* Desktop Links */}
@@ -56,29 +56,25 @@ const Navbar = () => {
         className={`fixed top-0 left-0 right-0 bg-[#080C16] shadow-lg z-40 transform transition-transform duration-300 ease-in-out flex flex-col justify-between ${
           menuOpen ? "translate-y-0" : "-translate-y-full"
         }`}
-        style={{ height: "60vh" }}
-      >
+        style={{ height: "60vh" }}>
         {/* Menu Links */}
         <div className="p-6 mt-26 flex flex-col gap-10 text-base">
           <Link
             onClick={() => setMenuOpen(false)}
             to="/"
-            className="text-[#808EA3]"
-          >
+            className="text-[#808EA3]">
             Home
           </Link>
           <Link
             onClick={() => setMenuOpen(false)}
             to="/about"
-            className="text-[#808EA3]"
-          >
+            className="text-[#808EA3]">
             About Us
           </Link>
           <Link
             onClick={() => setMenuOpen(false)}
             to="/contact"
-            className="text-[#808EA3]"
-          >
+            className="text-[#808EA3]">
             Contact Us
           </Link>
         </div>
@@ -99,8 +95,7 @@ const Navbar = () => {
       {menuOpen && (
         <div
           className="fixed inset-0 bg-black/50 z-30"
-          onClick={() => setMenuOpen(false)}
-        ></div>
+          onClick={() => setMenuOpen(false)}></div>
       )}
     </>
   );
