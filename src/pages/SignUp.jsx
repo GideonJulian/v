@@ -24,7 +24,7 @@ const RegisterPage = () => {
 
           <h1 className="mt-6 text-3xl md:text-4xl font-bold text-white leading-tight">
             Join the <span className="text-[#A78BFA]">QFIsecure Revolution</span>
-          </h1>
+          </h1> 
           <p className="mt-4 text-[#8FA2BC] text-base">
             Create your account and start securing your digital future with quantum-powered financial technology.
           </p>
@@ -71,7 +71,7 @@ const RegisterPage = () => {
         <form className="space-y-5">
           {isSignup && (
             <div>
-              <label className="text-sm mb-1 block">First Name</label>
+              <label className="text-sm mb-1 block">FullName</label>
               <input
                 type="text"
                 placeholder="John"
