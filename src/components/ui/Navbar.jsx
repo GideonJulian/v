@@ -84,7 +84,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between gap-2 p-4">
           <button
             onClick={() => {
-              navigate("/login");
+              navigate("/signup");
               setMenuOpen(false);
             }}
             className="w-70 text-[#808EA3] font-bold text-base border border-[#7255F7] py-3 rounded-md"
