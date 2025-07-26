@@ -33,8 +33,8 @@ const Navbar = () => {
           {/* Desktop Buttons */}
           <div className="hidden md:flex items-center gap-6">
             <button
-              onClick={() => navigate("/login")}
-              className="text-[#808EA3] font-bold text-lg"
+              onClick={() => navigate("/signup")}
+              className="text-[#808EA3] font-bold text-lg cursor-pointer"
             >
               Login
             </button>

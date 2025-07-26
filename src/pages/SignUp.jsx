@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
 import logo from '../assets/icons/logo.png'
 import bg from '../assets/images/bg.png'
+import { useNavigate } from "react-router-dom";
 const RegisterPage = () => {
   const [mode, setMode] = useState("signup");
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirm, setShowConfirm] = useState(false);
 
   const isSignup = mode === "signup";
+   const navigate = useNavigate();
 
   return (
     <div className="relative min-h-screen bg-[#0A0D14] text-white flex flex-col md:flex-row items-center justify-center p-6">
@@ -144,6 +146,7 @@ const RegisterPage = () => {
 
           <button
             type="submit"
+            onClick={() => navigate('/')}
             className="w-full py-3 bg-gradient-to-r from-violet-600 to-purple-500 text-white rounded-md font-semibold transition hover:opacity-90"
           >
             {isSignup ? "Create Account →" : "Login →"}
