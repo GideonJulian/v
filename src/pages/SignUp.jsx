@@ -146,7 +146,7 @@ const RegisterPage = () => {
 
           <button
             type="submit"
-            onClick={() => navigate('/')}
+            onClick={() => navigate('/dashboard')}
             className="w-full py-3 bg-gradient-to-r from-violet-600 to-purple-500 text-white rounded-md font-semibold transition hover:opacity-90"
           >
             {isSignup ? "Create Account →" : "Login →"}
