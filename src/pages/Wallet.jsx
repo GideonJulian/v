@@ -62,9 +62,7 @@ const Wallet = () => {
                 </button>
                 <button
                   className={`w-1/2 py-2 rounded-lg font-medium ${
-                    activeTab === "receive"
-                      ? "bg-purple-500"
-                      : "bg-gray-800"
+                    activeTab === "receive" ? "bg-purple-500" : "bg-gray-800"
                   } transition`}
                 >
                   Receive
