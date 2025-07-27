@@ -3,10 +3,10 @@ import { DesktopNav } from "./_components/DashboardNav";
 
 function AdminLayout() {
   return (
-    <div>
+    <div className="w-full ">
       <DesktopNav />
       <div
-        className="pt-[90px] "
+        className="pt-[90px] w-full"
         style={{
           backgroundImage: `url("/bg.png")`,
           backgroundRepeat: "no-repeat",
