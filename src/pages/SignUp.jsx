@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
-import logo from '../assets/icons/logo.png'
-import bg from '../assets/images/bg.png'
+import logo from "../assets/icons/logo.png";
+import bg from "../assets/images/bg.png";
 import { useNavigate } from "react-router-dom";
 const RegisterPage = () => {
   const [mode, setMode] = useState("signup");
@@ -9,24 +9,26 @@ const RegisterPage = () => {
   const [showConfirm, setShowConfirm] = useState(false);
 
   const isSignup = mode === "signup";
-   const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <div className="relative min-h-screen bg-[#0A0D14] text-white flex flex-col md:flex-row items-center justify-center p-6">
-          <div
-                className="absolute inset-0 bg-no-repeat bg-cover bg-center -z-10"
-                style={{ backgroundImage: `url(${bg})` }}
-              />
+      <div
+        className="absolute inset-0 bg-no-repeat bg-cover bg-center -z-10"
+        style={{ backgroundImage: `url(${bg})` }}
+      />
       {/* Left Side */}
       <div className="w-full md:w-1/2 max-w-[600px] space-y-8 mb-12 md:mb-0">
         <div>
-        <img src={logo} alt="" />
+          <img src={logo} alt="" />
 
           <h1 className="mt-6 text-3xl md:text-4xl font-bold text-white leading-tight">
-            Join the <span className="text-[#A78BFA]">QFIsecure Revolution</span>
-          </h1> 
+            Join the{" "}
+            <span className="text-[#A78BFA]">QFIsecure Revolution</span>
+          </h1>
           <p className="mt-4 text-[#8FA2BC] text-base">
-            Create your account and start securing your digital future with quantum-powered financial technology.
+            Create your account and start securing your digital future with
+            quantum-powered financial technology.
           </p>
         </div>
 
@@ -35,7 +37,9 @@ const RegisterPage = () => {
             <div className="text-yellow-400 text-xl">🛡️</div>
             <div>
               <h4 className="text-white font-semibold">Bank-Grade Security</h4>
-              <p className="text-[#8FA2BC] text-sm">Your data is protected with quantum encryption</p>
+              <p className="text-[#8FA2BC] text-sm">
+                Your data is protected with quantum encryption
+              </p>
             </div>
           </div>
 
@@ -43,7 +47,9 @@ const RegisterPage = () => {
             <div className="text-cyan-400 text-xl">⚡</div>
             <div>
               <h4 className="text-white font-semibold">Instant Access</h4>
-              <p className="text-[#8FA2BC] text-sm">Start trading immediately after verification</p>
+              <p className="text-[#8FA2BC] text-sm">
+                Start trading immediately after verification
+              </p>
             </div>
           </div>
 
@@ -51,7 +57,9 @@ const RegisterPage = () => {
             <div className="text-purple-400 text-xl">🎉</div>
             <div>
               <h4 className="text-white font-semibold">Free to Join</h4>
-              <p className="text-[#8FA2BC] text-sm">No hidden fees or setup costs</p>
+              <p className="text-[#8FA2BC] text-sm">
+                No hidden fees or setup costs
+              </p>
             </div>
           </div>
         </div>
@@ -146,7 +154,7 @@ const RegisterPage = () => {
 
           <button
             type="submit"
-            onClick={() => navigate('/dashboard')}
+            onClick={() => navigate("/dashboard")}
             className="w-full py-3 bg-gradient-to-r from-violet-600 to-purple-500 text-white rounded-md font-semibold transition hover:opacity-90"
           >
             {isSignup ? "Create Account →" : "Login →"}
