@@ -10,7 +10,11 @@ const Oursolution = () => {
       <div className="text-center">
         <h1>
           <span className="text-3xl font-bold text-white sm:text-4xl md:text-5xl">
-            Our <GradientText text={"Soulution"} />
+            Our{" "}
+            <GradientText
+              text={"Soulution"}
+              className="text-3xl sm:text-4xl md:text-5xl"
+            />
           </span>
         </h1>
         <p className="text-[#808EA3] text-center mt-2 text-sm sm:text-base">

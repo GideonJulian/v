@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
 
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -46,8 +46,7 @@ const Faq = () => {
           <div
             key={index}
             className="p-6 md:p-8 bg-[#080C16] border rounded-lg border-[#141E384D] shadow-xl w-full max-w-[782px] cursor-pointer"
-            onClick={() => toggleFaq(index)}
-          >
+            onClick={() => toggleFaq(index)}>
             <div className="flex justify-between items-center">
               <h1 className="font-bold text-white text-lg">{item.head}</h1>
               <span className="text-white text-2xl">
@@ -62,8 +61,7 @@ const Faq = () => {
                   animate={{ opacity: 1, height: "auto" }}
                   exit={{ opacity: 0, height: 0 }}
                   transition={{ duration: 0.3 }}
-                  className="overflow-hidden mt-3"
-                >
+                  className="overflow-hidden mt-3">
                   <p className="text-[#8FA2BC]">{item.text}</p>
                 </motion.div>
               )}

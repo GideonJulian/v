@@ -10,7 +10,6 @@ import GetStarted from "../components/GetStarted";
 const About = () => {
   return (
     <div>
-      <Navbar />
       <div>
         <AboutHero />
       </div>
@@ -26,9 +25,9 @@ const About = () => {
       <div>
         <Faq />
       </div>
-       <div className="py-20">
-              <GetStarted />
-            </div>
+      <div className="py-20">
+        <GetStarted />
+      </div>
     </div>
   );
 };

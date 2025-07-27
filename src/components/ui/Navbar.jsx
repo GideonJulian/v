@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import logo from "../../assets/icons/logo.png";
+import Logo from "./Logo";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className="mx-auto max-w-[1200px] flex items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <img src={logo} alt="Logo" className="w-28 md:w-32 lg:w-36" />
+            <Logo />
           </div>
 
           {/* Desktop Links */}
@@ -34,14 +34,12 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-6">
             <button
               onClick={() => navigate("/signup")}
-              className="text-[#808EA3] font-bold text-lg cursor-pointer"
-            >
+              className="text-[#808EA3] font-bold text-lg cursor-pointer">
               Login
             </button>
             <button
               onClick={() => navigate("/signup")}
-              className="relative px-6 py-3 rounded-lg bg-gradient-to-r from-purple-600 cursor-pointer to-purple-400 text-black font-medium flex items-center gap-2"
-            >
+              className="relative px-6 py-3 rounded-lg bg-gradient-to-r from-purple-600 cursor-pointer to-purple-400 text-black font-medium flex items-center gap-2">
               Sign Up
               <span className="text-lg">→</span>
             </button>
@@ -65,17 +63,25 @@ const Navbar = () => {
         className={`fixed top-0 left-0 right-0 bg-[#080C16] shadow-lg z-40 transform transition-transform duration-300 ease-in-out flex flex-col justify-between ${
           menuOpen ? "translate-y-0" : "-translate-y-full"
         }`}
-        style={{ height: "60vh" }}
-      >
+        style={{ height: "60vh" }}>
         {/* Menu Links */}
         <div className="p-6 mt-26 flex flex-col gap-10 text-base">
-          <Link onClick={() => setMenuOpen(false)} to="/" className="text-[#808EA3]">
+          <Link
+            onClick={() => setMenuOpen(false)}
+            to="/"
+            className="text-[#808EA3]">
             Home
           </Link>
-          <Link onClick={() => setMenuOpen(false)} to="/about" className="text-[#808EA3]">
+          <Link
+            onClick={() => setMenuOpen(false)}
+            to="/about"
+            className="text-[#808EA3]">
             About Us
           </Link>
-          <Link onClick={() => setMenuOpen(false)} to="/contact" className="text-[#808EA3]">
+          <Link
+            onClick={() => setMenuOpen(false)}
+            to="/contact"
+            className="text-[#808EA3]">
             Contact Us
           </Link>
         </div>
@@ -87,8 +93,7 @@ const Navbar = () => {
               navigate("/signup");
               setMenuOpen(false);
             }}
-            className="w-70 text-[#808EA3] font-bold text-base border border-[#7255F7] py-3 rounded-md"
-          >
+            className="w-70 text-[#808EA3] font-bold text-base border border-[#7255F7] py-3 rounded-md">
             Login
           </button>
           <button
@@ -96,8 +101,7 @@ const Navbar = () => {
               navigate("/signup");
               setMenuOpen(false);
             }}
-            className="w-70 py-3 rounded-md bg-gradient-to-r from-purple-600 to-purple-400 text-black font-medium flex items-center justify-center gap-2"
-          >
+            className="w-70 py-3 rounded-md bg-gradient-to-r from-purple-600 to-purple-400 text-black font-medium flex items-center justify-center gap-2">
             Sign Up
             <span className="text-lg">→</span>
           </button>
@@ -108,8 +112,7 @@ const Navbar = () => {
       {menuOpen && (
         <div
           className="fixed inset-0 bg-black/50 z-30"
-          onClick={() => setMenuOpen(false)}
-        ></div>
+          onClick={() => setMenuOpen(false)}></div>
       )}
     </>
   );

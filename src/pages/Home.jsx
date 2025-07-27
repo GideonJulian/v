@@ -14,9 +14,7 @@ import GetStarted from "../components/GetStarted";
 const Home = () => {
   return (
     <div className="">
-      <div className="w-ful">
-        <Navbar />
-      </div>
+      <div className="w-ful">{/* <Navbar /> */}</div>
       <div>
         <Hero />
       </div>
@@ -24,7 +22,7 @@ const Home = () => {
         <Oursolution />
       </div>
       <div>
-        <Whyus /> 
+        <Whyus />
       </div>
       <div>
         <HowitWorks />
