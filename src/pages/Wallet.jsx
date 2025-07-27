@@ -23,12 +23,12 @@ const Wallet = () => {
           </div>
 
           {/* Tabs */}
-          <div className="flex bg-[#0b0c15] rounded-lg overflow-hidden mb-6">
+          <div className="flex bg-[#0b0c15] rounded-lg overflow-hidden mb-6 p-3">
             {tabs.map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`flex-1 py-2 text-sm font-semibold capitalize transition-all ${
+                className={`flex-1 py-2 text-sm font-semibold capitalize transition-all rounded-sm ${
                   activeTab === tab
                     ? "bg-[#000] text-white"
                     : "bg-[#0b0c15] text-gray-400 hover:bg-purple-700/10"
