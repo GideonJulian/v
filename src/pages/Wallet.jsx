@@ -30,7 +30,7 @@ const Wallet = () => {
                 onClick={() => setActiveTab(tab)}
                 className={`flex-1 py-2 text-sm font-semibold capitalize transition-all ${
                   activeTab === tab
-                    ? "bg-purple-500 text-white"
+                    ? "bg-[#000] text-white"
                     : "bg-[#0b0c15] text-gray-400 hover:bg-purple-700/10"
                 }`}
               >
