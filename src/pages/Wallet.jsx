@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import SendContent from "../components/SendContent";
+import ReceiveContent from "../components/ReceiveContent";
 
 const Wallet = () => {
   const [activeTab, setActiveTab] = useState("send");
@@ -38,58 +40,15 @@ const Wallet = () => {
               </button>
             ))}
           </div>
-
-          {/* Balance and Address */}
           <div>
-            <p className="text-gray-400 text-sm">Balance</p>
-            <h1 className="text-3xl font-bold text-purple-400">1.2456 BTC</h1>
-            <p className="text-sm text-gray-400 mb-4">$119,125.34</p>
-
-            <p className="text-sm text-gray-400">Network</p>
-            <p className="text-sm mb-4">Bitcoin</p>
+            {activeTab === "send" ? (
+              <SendContent />
+            ) : activeTab === "receive" ? (
+              <ReceiveContent />
+            ) : (
+              ""
+            )}
           </div>
-
-          {/* Send & Receive Input */}
-          {activeTab === "send" || activeTab === "receive" ? (
-            <div className="space-y-4 mt-4">
-              <div className="flex gap-2 justify-center">
-                <button
-                  className={`w-1/2 py-2 rounded-lg font-medium ${
-                    activeTab === "send" ? "bg-purple-500" : "bg-gray-800"
-                  } transition`}
-                >
-                  Send
-                </button>
-                <button
-                  className={`w-1/2 py-2 rounded-lg font-medium ${
-                    activeTab === "receive" ? "bg-purple-500" : "bg-gray-800"
-                  } transition`}
-                >
-                  Receive
-                </button>
-              </div>
-
-              <div className="flex flex-col items-center">
-                <label className="text-sm text-gray-400 mb-1">
-                  Wallet Address
-                </label>
-                <div className="flex bg-gray-800 rounded-lg overflow-hidden w-full max-w-xl">
-                  <input
-                    readOnly
-                    value="bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh"
-                    className="flex-1 bg-transparent px-4 py-2 text-sm text-white"
-                  />
-                  <button className="px-4 hover:bg-purple-600 transition">
-                    📋
-                  </button>
-                </div>
-              </div>
-            </div>
-          ) : (
-            <p className="text-sm text-gray-400 mt-4">
-              No data for this tab yet.
-            </p>
-          )}
         </div>
       </div>
     </div>
