@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SendContent from "../components/SendContent";
 import ReceiveContent from "../components/ReceiveContent";
+import WalletHistory from "../components/WalleHistory";
 
 const Wallet = () => {
   const [activeTab, setActiveTab] = useState("send");
@@ -45,6 +46,8 @@ const Wallet = () => {
               <SendContent />
             ) : activeTab === "receive" ? (
               <ReceiveContent />
+            ) : activeTab === "history" ? (
+              <WalletHistory />
             ) : (
               ""
             )}
