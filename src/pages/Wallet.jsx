@@ -11,7 +11,10 @@ const Wallet = () => {
   return (
     <div className="min-h-screen w-full bg-gradient-to-b from-[#0b0c15] to-[#0e0f1c] text-white font-sans flex justify-center px-4">
       <div className="w-full max-w-3xl">
-        <h2 className="text-2xl font-bold mb-1">My Wallet</h2>
+        <div className="flex items-center gap-2">
+          <img src="/wallet.png" />
+          <h2 className="text-2xl font-bold mb-1">My Wallet</h2>
+        </div>
         <p className="text-sm text-gray-400 mb-6">
           Manage your digital assets with quantum security
         </p>
