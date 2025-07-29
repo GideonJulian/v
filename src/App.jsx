@@ -10,6 +10,7 @@ import AdminLayout from "./layouts/AdminLayout";
 import Dashboard_admin from "./layouts/_components/Dashboard_admin";
 
 import RegisterForm from "./pages/SignUp";
+import UserProfile from "./pages/UserProfile";
 
 const route = createBrowserRouter([
   {
@@ -44,7 +45,10 @@ const route = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard_admin />,
-      },
+      },{
+        path: 'profile',
+        element: <UserProfile />
+      }
     ],
   },
 ]);
