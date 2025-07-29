@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import SendContent from "../components/SendContent";
 import ReceiveContent from "../components/ReceiveContent";
 import WalletHistory from "../components/WalleHistory";
+import OverView from "../components/OverView";
 
 const Wallet = () => {
   const [activeTab, setActiveTab] = useState("send");
@@ -51,6 +52,8 @@ const Wallet = () => {
               <ReceiveContent />
             ) : activeTab === "history" ? (
               <WalletHistory />
+            ) : activeTab === "overview" ? (
+              <OverView />
             ) : (
               ""
             )}
