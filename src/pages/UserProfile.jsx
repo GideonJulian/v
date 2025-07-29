@@ -1,5 +1,14 @@
 import React, { useState } from "react";
-import { Mail, Phone, MapPin, Calendar, Edit, Save, CheckCircle, TrendingUp } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Calendar,
+  Edit,
+  Save,
+  CheckCircle,
+  TrendingUp,
+} from "lucide-react";
 
 const UserDashboard = () => {
   const [activeTab, setActiveTab] = useState("Profile");
@@ -23,16 +32,16 @@ const UserDashboard = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0b0c15] to-[#0e0f1c] text-white p-4 md:p-10 font-sans">
       {/* Tabs */}
-             <div className="flex bg-[#0b0c15] rounded-lg overflow-hidden mb-6 p-3">
+      <div className="flex bg-[#080C16CC] border border-[#141E38] rounded-lg overflow-hidden mb-6 p-3">
         {tabs.map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-              className={`flex-1 py-2 text-sm font-semibold capitalize transition-all rounded-sm ${
-                  activeTab === tab
-                    ? "bg-[#000] text-white"
-                    : "bg-[#0b0c15] text-gray-400 hover:bg-purple-700/10"
-                }`}
+            className={`flex-1 py-2 text-sm font-semibold capitalize transition-all rounded-sm ${
+              activeTab === tab
+                ? "bg-[#000] text-white"
+                : " text-gray-400 hover:bg-purple-700/10"
+            }`}
           >
             {tab}
           </button>
@@ -57,7 +66,7 @@ const UserDashboard = () => {
                     Quantum Pro
                   </span>
                   <span className="bg-[#1E1E1E] text-white px-3 py-1 text-xs rounded-full border flex items-center gap-2 border-gray-600">
-                    <CheckCircle size={16}/> Verified
+                    <CheckCircle size={16} /> Verified
                   </span>
                 </div>
               </div>
@@ -80,7 +89,12 @@ const UserDashboard = () => {
 
             {/* Quick Stats */}
             <div className="border border-[#141E38] p-6 rounded-lg space-y-4">
-              <h3 className="text-lg font-semibold flex items-center gap-2"  size={16}><TrendingUp /> Quick Stats</h3>
+              <h3
+                className="text-lg font-semibold flex items-center gap-2"
+                size={16}
+              >
+                <TrendingUp /> Quick Stats
+              </h3>
               <div className="space-y-2 text-sm text-gray-300">
                 <div className="flex justify-between">
                   <span>Portfolio Value</span>
@@ -161,9 +175,7 @@ const UserDashboard = () => {
                 />
               </div>
               <div className="md:col-span-2">
-                <label className="block text-gray-500 mb-1">
-                  Phone Number
-                </label>
+                <label className="block text-gray-500 mb-1">Phone Number</label>
                 <input
                   className="w-full bg-[#05080F] border border-[#141E38] px-3 py-3 placeholder:text-[#F8FAFC] rounded text-[#F8FAFC]"
                   type="tel"
