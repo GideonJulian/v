@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Mail, Phone, MapPin, Calendar, Edit, Save } from "lucide-react";
+import { Mail, Phone, MapPin, Calendar, Edit, Save, CheckCircle, TrendingUp } from "lucide-react";
 
 const UserDashboard = () => {
   const [activeTab, setActiveTab] = useState("Profile");
@@ -56,8 +56,8 @@ const UserDashboard = () => {
                   <span className="bg-purple-600 text-white px-3 py-1 text-xs rounded-full">
                     Quantum Pro
                   </span>
-                  <span className="bg-[#1E1E1E] text-white px-3 py-1 text-xs rounded-full border border-gray-600">
-                    ✅ Verified
+                  <span className="bg-[#1E1E1E] text-white px-3 py-1 text-xs rounded-full border flex items-center gap-2 border-gray-600">
+                    <CheckCircle size={16}/> Verified
                   </span>
                 </div>
               </div>
@@ -80,7 +80,7 @@ const UserDashboard = () => {
 
             {/* Quick Stats */}
             <div className="border border-[#141E38] p-6 rounded-lg space-y-4">
-              <h3 className="text-lg font-semibold">📈 Quick Stats</h3>
+              <h3 className="text-lg font-semibold flex items-center gap-2"  size={16}><TrendingUp /> Quick Stats</h3>
               <div className="space-y-2 text-sm text-gray-300">
                 <div className="flex justify-between">
                   <span>Portfolio Value</span>
