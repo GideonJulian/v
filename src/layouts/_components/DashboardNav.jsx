@@ -47,7 +47,8 @@ export function DesktopNav() {
                     location.pathname === item.link
                       ? "bg-gradient-to-r from-[#7255F7] to-[#BB99FF]"
                       : "text-[#8FA2BC] hover:text-gray-300"
-                  }`}>
+                  }`}
+                >
                   {item.name}
                 </Link>
               </li>
@@ -64,7 +65,8 @@ export function DesktopNav() {
                 role="button"
                 className={` ${
                   toggle && "bg-[#060a12] px-2 py-1 rounded-[2px]"
-                } `}>
+                } `}
+              >
                 <IoMdClose size={20} className="text-white cursor-pointer" />
               </div>
             ) : (
@@ -98,7 +100,8 @@ function MobileNav({ setToggle }) {
                     location.pathname === item.link
                       ? "bg-gradient-to-r from-[#7255F7] to-[#BB99FF]"
                       : "text-[#8FA2BC] hover:text-gray-300"
-                  }`}>
+                  }`}
+                >
                   {item.name}
                 </Link>
               </li>
@@ -106,7 +109,9 @@ function MobileNav({ setToggle }) {
           </ul>
 
           <ul className="pt-6 text-[#8FA2BC] text-[16px] space-y-4 font-inter px-6">
-            <li className="hover:text-gray-300 cursor-pointer">Profile</li>
+            <li className="hover:text-gray-300 cursor-pointer">
+              <Link to={'/profile'}>Profile</Link>
+            </li>
             <li className="hover:text-gray-300 cursor-pointer">Setting</li>
             <li className="text-red-500 cursor-pointer">Log out</li>
           </ul>
