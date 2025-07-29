@@ -23,16 +23,16 @@ const UserDashboard = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0b0c15] to-[#0e0f1c] text-white p-4 md:p-10 font-sans">
       {/* Tabs */}
-      <div className="flex justify-center space-x-6 mb-6 text-sm md:text-base">
+             <div className="flex bg-[#0b0c15] rounded-lg overflow-hidden mb-6 p-3">
         {tabs.map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`pb-1 ${
-              activeTab === tab
-                ? "border-b-2 border-white"
-                : "text-gray-400 hover:text-white"
-            }`}
+              className={`flex-1 py-2 text-sm font-semibold capitalize transition-all rounded-sm ${
+                  activeTab === tab
+                    ? "bg-[#000] text-white"
+                    : "bg-[#0b0c15] text-gray-400 hover:bg-purple-700/10"
+                }`}
           >
             {tab}
           </button>
@@ -44,7 +44,7 @@ const UserDashboard = () => {
           {/* Sidebar */}
           <div className="lg:col-span-1 space-y-6">
             {/* Profile Card */}
-            <div className="bg-[#101012] p-6 rounded-lg space-y-4">
+            <div className="border border-[#141E38] p-6 rounded-lg space-y-4">
               <div className="flex flex-col items-center text-center">
                 <div className="w-20 h-20 rounded-full bg-white text-black flex items-center justify-center text-2xl font-semibold">
                   AJ
@@ -79,7 +79,7 @@ const UserDashboard = () => {
             </div>
 
             {/* Quick Stats */}
-            <div className="bg-[#101012] p-6 rounded-lg space-y-4">
+            <div className="border border-[#141E38] p-6 rounded-lg space-y-4">
               <h3 className="text-lg font-semibold">📈 Quick Stats</h3>
               <div className="space-y-2 text-sm text-gray-300">
                 <div className="flex justify-between">
@@ -112,7 +112,7 @@ const UserDashboard = () => {
           </div>
 
           {/* Editable Personal Info */}
-          <div className="lg:col-span-2 bg-[#101012] p-6 rounded-lg space-y-6">
+          <div className="lg:col-span-2 border border-[#141E38] p-6 rounded-lg space-y-6">
             <div className="flex justify-between items-center">
               <h2 className="text-xl font-semibold">Personal Information</h2>
               <button
@@ -128,7 +128,7 @@ const UserDashboard = () => {
               <div>
                 <label className="block text-gray-500 mb-1">First Name</label>
                 <input
-                  className="w-full bg-[#1E1E1E] p-2 rounded text-white"
+                  className="w-full bg-[#05080F] border border-[#141E38] px-3 py-3 placeholder:text-[#F8FAFC] rounded text-[#F8FAFC]"
                   type="text"
                   name="firstName"
                   value={profile.firstName}
@@ -139,7 +139,7 @@ const UserDashboard = () => {
               <div>
                 <label className="block text-gray-500 mb-1">Last Name</label>
                 <input
-                  className="w-full bg-[#1E1E1E] p-2 rounded text-white"
+                  className="w-full bg-[#05080F] border border-[#141E38] px-3 py-3 placeholder:text-[#F8FAFC] rounded text-[#F8FAFC]"
                   type="text"
                   name="lastName"
                   value={profile.lastName}
@@ -152,7 +152,7 @@ const UserDashboard = () => {
                   Email Address
                 </label>
                 <input
-                  className="w-full bg-[#1E1E1E] p-2 rounded text-white"
+                  className="w-full bg-[#05080F] border border-[#141E38] px-3 py-3 placeholder:text-[#F8FAFC] rounded text-[#F8FAFC]"
                   type="email"
                   name="email"
                   value={profile.email}
@@ -165,7 +165,7 @@ const UserDashboard = () => {
                   Phone Number
                 </label>
                 <input
-                  className="w-full bg-[#1E1E1E] p-2 rounded text-white"
+                  className="w-full bg-[#05080F] border border-[#141E38] px-3 py-3 placeholder:text-[#F8FAFC] rounded text-[#F8FAFC]"
                   type="tel"
                   name="phone"
                   value={profile.phone}
@@ -176,7 +176,7 @@ const UserDashboard = () => {
               <div className="md:col-span-2">
                 <label className="block text-gray-500 mb-1">Location</label>
                 <input
-                  className="w-full bg-[#1E1E1E] p-2 rounded text-white"
+                  className="w-full bg-[#05080F] border border-[#141E38] px-3 py-3 placeholder:text-[#F8FAFC] rounded text-[#F8FAFC]"
                   type="text"
                   name="location"
                   value={profile.location}
